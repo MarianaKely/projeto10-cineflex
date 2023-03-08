@@ -45,4 +45,4 @@ const Style = createStyle`
         border-spacing: 0;
     }
 `;
-export default Style;
+export default createStyle;
