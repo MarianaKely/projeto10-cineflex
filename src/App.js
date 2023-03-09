@@ -16,7 +16,8 @@ import styled from "styled-components";
 import Header from "./components/Header";
 import Pageone from "./pages/Pageone";
 import Pagetwo from "./pages/Pagetwo";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import Pagethree from "./pages/Pagethree"
 
 
 // Import files from js pages - end
@@ -33,6 +34,9 @@ export default function App() {
   const [motionpicture, setMotionpicture] = useState(null);
   const [movie, setMovie] = useState(null);
   const [room, setRoom] = useState(null);
+  const [reservationperchair, setReservationperChair] = useState({});
+  const [individualbooking, setIndividualBoooking] = useState([]);
+
   
 
 
@@ -75,7 +79,10 @@ export default function App() {
             />
              <Route path="/sessoes/:idFilme" element={
                     <Pagetwo movietheaterroom={setRoom} />}
-             />              
+             />     
+             <Route path="/assentos/:idSessao" element={
+                    <Pagethree setReservationperChair={setReservationperChair} setIndividualBoooking={setIndividualBoooking} /> }
+             />         
             </Routes>
 
           </Container>
