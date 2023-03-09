@@ -15,7 +15,8 @@ import styled from "styled-components";
 
 import Header from "./components/Header";
 import Pageone from "./pages/Pageone";
-import Pagetwo from "./pages/Pagetwo"
+import Pagetwo from "./pages/Pagetwo";
+import Footer from "./components/Footer"
 
 
 // Import files from js pages - end
@@ -78,6 +79,7 @@ export default function App() {
             </Routes>
 
           </Container>
+          <Footer down={movie} motionpictureroom={room} />
 
       </BrowserRouter>
 
