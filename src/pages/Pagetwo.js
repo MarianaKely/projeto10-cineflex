@@ -7,7 +7,6 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Globalonfig } from "../Globalonfig";
 
 
 // Import images from assets - outset
@@ -41,7 +40,10 @@ export default function Pagetwo ({ movietheaterroom }) {
 
     if (idFilme) {
 
-      const promise = axios.get(`${Globalonfig}/movies/${idFilme}/showtimes`);
+      const promise = axios.get(`https://mock-api.driven.com.br/api/v8/cineflex/movies/${idFilme}/showtimes`);
+
+      
+
       promise.then((parameter) => setDays(parameter.data.days));
 
     }
@@ -126,7 +128,7 @@ export default function Pagetwo ({ movietheaterroom }) {
 }
 
 
-// Pageone.js styling - outset
+// Pagetwo.js styling - outset
 
 
 const Pagetwocontainer = styled.div`
@@ -202,7 +204,7 @@ const Button = styled.button`
   }
 `
 
-// Styling part of times available - end
+// Styling the button - end
 
 
 
