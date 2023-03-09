@@ -13,10 +13,10 @@ export default function Footer({ down, motionpictureroom }) {
           <BaseboardIMG>
             <img src={down.posterURL} alt={`poster for ${down.title}`} />
           </BaseboardIMG>
-          <div>
+          <BaseboardText>
             <div>{down.title}</div>
             {motionpictureroom && <div>{`${motionpictureroom.weekday} - ${motionpictureroom.name}`}</div>}
-          </div>
+          </BaseboardText>
         </Baseboard>
       );
     }
@@ -34,7 +34,7 @@ const Baseboard = styled.div`
   display: flex;
   align-items: center;
   
-`;
+`
 
 const BaseboardIMG = styled.div`
   height: 100%;
@@ -47,4 +47,8 @@ const BaseboardIMG = styled.div`
     height: 72px;
     border: 5px solid #ffffff;
   }
-`;
+`
+
+const BaseboardText = styled.text`
+ font-weight: bold;
+`
