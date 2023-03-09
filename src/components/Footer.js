@@ -15,6 +15,7 @@ export default function Footer({ down, motionpictureroom }) {
           </BaseboardIMG>
           <div>
             <div>{down.title}</div>
+            {motionpictureroom && <div>{`${motionpictureroom.weekday} - ${motionpictureroom.name}`}</div>}
           </div>
         </Baseboard>
       );
