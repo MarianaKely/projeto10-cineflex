@@ -132,24 +132,24 @@ export default function Pagetwo ({ movietheaterroom }) {
 
 
 const Pagetwocontainer = styled.div`
-max-width: 614px;
-Width:100%;
-  margin-bottom: 117px;
-  margin-top: 25px;
+   max-width: 614px;
+   Width:100%;
+   margin-bottom: 117px;
+   margin-top: 25px;
  
 `
 
 // Styling the top title - outset
 
 const Top = styled.div`
-width: 100%;
-height: 110px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #293845;
-font-family: "Roboto", sans-serif;
-font-size: 34px;
+   width: 100%;
+   height: 110px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #293845;
+   font-family: "Roboto", sans-serif;
+   font-size: 34px;
 `
 
 
@@ -161,15 +161,15 @@ font-size: 34px;
 
 
 const Daybox = styled.div`
-  display: flex;
-  font-size: 20px;
-  margin-left: 8%;
-  margin-bottom: 10%;
-  margin-top: 8%;
+   display: flex;
+   font-size: 20px;
+   margin-left: 8%;
+   margin-bottom: 10%;
+   margin-top: 8%;
 `
 
 const Daysavailable = styled.div`
-  margin-right: 5%;
+   margin-right: 5%;
 `
 
 
@@ -182,7 +182,7 @@ const Daysavailable = styled.div`
 
 const Weektime = styled.div`
 
-  margin-bottom:1%;
+   margin-bottom:1%;
 `
 
 // Styling part of times available - end
@@ -192,16 +192,16 @@ const Weektime = styled.div`
 
 
 const Button = styled.button`
-  background-color: #e8833a;
-  border-width: 0;
-  border-radius: 3px;
-  min-width: 83px;
-  height: 43px;
-  font-size: 18px;
-  color: #ffffff;
-  margin-right: 8px;
-  cursor: pointer;
-  }
+   background-color: #e8833a;
+   border-width: 0;
+   border-radius: 3px;
+   min-width: 83px;
+   height: 43px;
+   font-size: 18px;
+   color: #ffffff;
+   margin-right: 8px;
+   cursor: pointer;
+   }
 `
 
 // Styling the button - end
