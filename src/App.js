@@ -15,6 +15,7 @@ import styled from "styled-components";
 
 import Header from "./components/Header";
 import Pageone from "./pages/Pageone";
+import Pagetwo from "./pages/Pagetwo"
 
 
 // Import files from js pages - end
@@ -30,6 +31,7 @@ export default function App() {
  
   const [motionpicture, setMotionpicture] = useState(null);
   const [movie, setMovie] = useState(null);
+  const [room, setRoom] = useState(null);
   
 
 
@@ -66,12 +68,13 @@ export default function App() {
 
             <Routes>
 
-            <Route
-                path="/" element={
+            <Route path="/" element={
                   <Pageone motionpicture={motionpicture} chosenmovie={setMovie} />
                 }
             />
-            
+             <Route path="/sessoes/:idFilme" element={
+                    <Pagetwo movietheaterroom={setRoom} />}
+             />              
             </Routes>
 
           </Container>
@@ -79,7 +82,7 @@ export default function App() {
       </BrowserRouter>
 
     </>
-
+    
   )
 
 
