@@ -134,9 +134,9 @@ export default function Pagetwo ({ movietheaterroom }) {
 const Pagetwocontainer = styled.div`
    max-width: 614px;
    Width:100%;
+   hight:100%;
    margin-bottom: 117px;
    margin-top: 25px;
- 
 `
 
 // Styling the top title - outset
