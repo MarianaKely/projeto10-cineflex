@@ -169,7 +169,7 @@
 
       <>
       
-        <Pagetwocontainer>
+        <Pagethreecontainer>
 
         <Top>Selecione o(s) assento(s)</Top>
 
@@ -183,8 +183,6 @@
                 </ChairCircle>
 
               ))}
-
-        </Pagetwocontainer>
 
 
         <ChairStatus>
@@ -217,10 +215,12 @@
         
         </InputsContainer>
 
+    </Pagethreecontainer>  
 
         <ButtonTwo isEnabled={dataChecker()} onClick={prePurchase} data-test="book-seat-btn">
           Reservar assento(s)
         </ButtonTwo> 
+  
        
       </>
 
@@ -236,7 +236,10 @@
 // Pagethree.js styling - outset  
 
 
-  const Pagetwocontainer = styled.div`
+  const Pagethreecontainer = styled.div`
+   max-width: 614px;
+   Width:100%;
+   hight:100%;
    display: flex;
    flex-wrap: wrap;
    max-width: 350px;
