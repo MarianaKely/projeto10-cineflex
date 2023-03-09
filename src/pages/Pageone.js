@@ -63,6 +63,9 @@ export default function Pageone ({ motionpicture, chosenmovie }) {
 
 
 const Containerpageone = styled.div`
+max-width: 614px;
+Width:100%;
+hight:100%;
 margin-top: 25px;
 margin-left: -8px;
 
