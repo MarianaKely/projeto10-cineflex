@@ -17,7 +17,8 @@ import Header from "./components/Header";
 import Pageone from "./pages/Pageone";
 import Pagetwo from "./pages/Pagetwo";
 import Footer from "./components/Footer";
-import Pagethree from "./pages/Pagethree"
+import Pagethree from "./pages/Pagethree";
+import Pagefour from "./pages/Pagefour";
 
 
 // Import files from js pages - end
@@ -82,7 +83,10 @@ export default function App() {
              />     
              <Route path="/assentos/:idSessao" element={
                     <Pagethree setReservationperChair={setReservationperChair} setIndividualBoooking={setIndividualBoooking} /> }
-             />         
+             />
+             <Route path="/sucesso/"element={
+                    <Pagefour down={movie} reservationperchair={reservationperchair} motionpictureroom={room} individualbooking={individualbooking}/>}
+            />         
             </Routes>
 
           </Container>
