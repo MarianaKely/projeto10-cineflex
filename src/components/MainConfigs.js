@@ -21,14 +21,16 @@ import Pagethree from "../pages/Pagethree";
 import Pagefour from "../pages/Pagefour";
 
 
+
 // Import files from js pages - end
+
 
 
 export default function MainConfigs () {
 
 
 
-// Constants that enable functionalities on the App.js - outset
+// Constants that enable functionalities on the MainConfigs.js - outset
 
 
  
@@ -41,10 +43,10 @@ export default function MainConfigs () {
   
 
 
-// Constants that enable functionalities on the App.js - end
+// Constants that enable functionalities on the MainConfigs.js - end
 
 
-// Configuration that enable functionalities on the App.js - outset
+// Configuration that enable functionalities on the MainConfigs.js - outset
  
   useEffect(() => {
 
@@ -56,7 +58,7 @@ export default function MainConfigs () {
   [])
 
 
-// Configuration that enable functionalities on the App.js - end
+// Configuration that enable functionalities on the MainConfigs.js - end
 
 
   return (
@@ -105,7 +107,7 @@ export default function MainConfigs () {
   
 }
 
-// App.js page styling - outset
+// MainConfigs.js page styling - outset
 
 
 const Container = styled.div`
@@ -117,7 +119,7 @@ align-items: center;
 font-family: "Roboto", sans-serif;
 `
 
-// App.js page styling - end
+// MainConfigs.js page styling - end
 
 
-// General configuration page and  rendering of cineflex - end
+// General configuration page and rendering of cineflex - end
